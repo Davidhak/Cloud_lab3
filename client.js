@@ -4,7 +4,7 @@ const data = {
   data: 'O Hi this a test Car River Deer Car Bear and'
 };
 
-axios.post('http://127.0.0.1:3000/getWordLengthFrequency', data)
+axios.post('https://desolate-citadel-17814.herokuapp.com/getWordLengthFrequency', data)
   .then((res) => {
     console.log();
     console.log("Sentence: " + String(JSON.stringify(data['data'])));
