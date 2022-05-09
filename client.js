@@ -2,6 +2,7 @@ const axios = require('axios');
 
 const data = {
   data: 'O Hi this a test Car River Deer Car Bear and'
+  //data: 'Hi all how are you doing this is a good day'
 };
 
 axios.post('https://desolate-citadel-17814.herokuapp.com/getWordLengthFrequency', data)
@@ -16,7 +17,7 @@ axios.post('https://desolate-citadel-17814.herokuapp.com/getWordLengthFrequency'
 
     for (let i = 0; i < 10; i++) {
       output.push({
-        'Words with': i + 1 + ' letters', value: parseInt(wordLength[i])
+        'Words with': i + 1, value: parseInt(wordLength[i])
       })
     }
 
